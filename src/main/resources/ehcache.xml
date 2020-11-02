@@ -2,7 +2,7 @@
 <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
 	updateCheck="false" monitoring="autodetect" dynamicConfig="true">
-
+	
 	<defaultCache 
 		eternal="false" 
 		maxElementsInMemory="1000"
@@ -21,6 +21,7 @@
 		timeToLiveSeconds="600" 
 		memoryStoreEvictionPolicy="LFU"
 		transactionalMode="off">
+		<cacheEventListenerFactory class="com.programmingsharing.demo.cacheevent.DemoEhcacheEventListenerFactory"/>
 		<persistence strategy="localTempSwap"/>
 		</cache>
 </ehcache>
