@@ -13,18 +13,22 @@
 	<artifactId>spring-caching-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-caching-demo</name>
-	<description>Demo project for Spring Caching</description>
+	<description>Demo project for Spring Caching Integration with Ehcache</description>
+	
+	<developers>
+		<developer>
+			<name>Thanh Tran</name>
+			<email>tranthanhdeveloper@gmail.com</email>
+			<organization>Programming Sharing</organization>
+			<organizationUrl>www.programmingsharing.com</organizationUrl>
+		</developer>
+	</developers>
 
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
