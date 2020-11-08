@@ -4,6 +4,6 @@ import com.programmingsharing.demo.entity.Book;
 
 public interface BookService {
 	
-	public Book getBookWithCache(String isbn10);
+	public Book findBook(String isbn10);
 
 }
