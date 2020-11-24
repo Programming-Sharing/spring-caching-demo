@@ -13,7 +13,7 @@
 	<artifactId>spring-caching-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-caching-demo</name>
-	<description>Demo project for Spring Caching Integration with Ehcache</description>
+	<description>Demo project for Spring Caching Integration with Caffeine Cache</description>
 	
 	<developers>
 		<developer>
@@ -32,16 +32,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.cache</groupId>
-			<artifactId>cache-api</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
 		</dependency>
 
 		<dependency>
