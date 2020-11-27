@@ -9,7 +9,7 @@ import com.programmingsharing.demo.simulator.NetworkSpeedSimulator;
 
 @Component
 public class BookServiceImpl implements BookService {
-	@Value("${demo.wait.duration}")
+	@Value("${demo.wait.duration:3000}")
 	private long waitDuration;
 	
 	@Cacheable(cacheNames = "getBookWithCache", key = "#isbn10")
