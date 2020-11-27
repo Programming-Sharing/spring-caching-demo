@@ -1,16 +1,15 @@
 package com.programmingsharing.demo.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.programmingsharing.demo.entity.Book;
 import com.programmingsharing.demo.services.BookService;
 
-@Controller
+@RestController
 @RequestMapping("book")
 public class BookController {
 	
@@ -18,10 +17,9 @@ public class BookController {
 	private BookService bookService;
 	
 	@GetMapping("/{isbn}")
-	public String findBook(@PathVariable(required = true, value = "isbn") String isbn, Model model) {
+	public Book findBook(@PathVariable(required = true, value = "isbn") String isbn) {
 		Book foundBook = bookService.findBook(isbn);
-		model.addAttribute("book", foundBook);
-		return "bookdetail";
+		return foundBook;
 	}
 	
 }

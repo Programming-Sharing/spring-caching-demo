@@ -10,5 +10,4 @@ public class SpringCachingDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCachingDemoApplication.class, args);
 	}
-
 }
